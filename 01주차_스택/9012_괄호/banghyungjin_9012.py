@@ -1,9 +1,9 @@
 count = int(input())
 is_true = True
 for i in range(count):
-    input_string = input()
-    string_list = []
-    for j in input_string:
+    input_string = input()  # 읽기
+    string_list = []        # stack용
+    for j in input_string:  # ( 이 들어오면 stack에 넣고, ) 이 들어오면 stack에 있는 ( 하나를 빼서 없앰,  뺄 ( 이 없으면 NO로
         if j == '(':
             string_list.append(j)
         elif len(string_list) == 0:

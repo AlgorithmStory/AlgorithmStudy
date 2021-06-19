@@ -1,6 +1,3 @@
-# 이렇게 풀면, 단순 for문으로 풀었을때보다 공간복잡도가(stact에 이전 값을 저장하니까) "약간" 증가하는 대신,
-# 시간복잡도가 "획기적"으로 줄어듬.
-# ---------------------------------------------------------------------------------
 n = int(input())
 arr = list(map(int, input().split(" ")))
 stact = []
@@ -21,15 +18,6 @@ for i in range(1, n+1):
             elif arr[-i] >= stact[-1]: # 탐색하는 요소가 stact.top 값보다 크거나 같으면, 버리고, while loop 계속 돔.
                 stact.pop()
 
-
-# result에저장하면서, 기댓값과 반대로 저장되기 때문에, 단순히 뒤집어 주는거.
-result2 = ""
-for i in range(1, n+1):
-    result2 += result[-i]
-    if i != n:
-        result2 += " "
-print(result2)
-
-
-
-
+# result에 저장하면서 기댓값과 반대로 저장되기 때문에, 뒤집어 줌.
+result = reversed(result)
+print(*result)

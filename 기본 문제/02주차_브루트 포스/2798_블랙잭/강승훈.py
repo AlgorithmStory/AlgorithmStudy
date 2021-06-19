@@ -1,3 +1,6 @@
+# 5 21
+# 5 6 7 8 9
+
 from sys import stdin
 n, m = map(int, input().split(" "))
 arr = list(map(int, stdin.readline().split(" ")))

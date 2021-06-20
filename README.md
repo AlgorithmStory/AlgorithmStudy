@@ -1,4 +1,4 @@
-# AlgorithmStudy
+
 ### 필독
 - 평일에 기본 문제 출시 [**<필수>**](https://www.acmicpc.net/)
 - 주말에 도전 문제 출시 [**<선택>**](https://programmers.co.kr/)

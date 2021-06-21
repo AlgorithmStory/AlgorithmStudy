@@ -13,8 +13,8 @@ def find_answer():                                                              
                 now = numbers[i] + numbers[j] + numbers[k]                                      # 3개 뽑은걸 계산
                 if now == int(count[1]):                                                        # 원하는 수와 같으면
                     return (now)                                                                # 그거 반환하고 바로 종료
-                elif int(count[1]) - (now) < int(count[1]) - answer and now < int(count[1]):    # 같은 건 아닌데 좀 더 가까운 수 일때
-                    answer = now                                                                # 예비 답에 저장
+                elif int(count[1]) - (now) < int(count[1]) - answer and now < int(count[1]):    # 같은 건 아닌데 이전 예비 답보다 좀 더 가까운 수 일때
+                    answer = now                                                                # 예비 답에 저장 후 다음 번 뽑은 수들과 비교
     return (answer)                                                                             # 원하는 수가 안나왔으면 예비 답을 반환
 
 

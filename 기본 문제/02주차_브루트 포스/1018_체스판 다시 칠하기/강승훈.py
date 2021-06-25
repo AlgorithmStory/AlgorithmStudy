@@ -38,7 +38,7 @@ def place_checker(color_orig):
     else:
         color = "W"
 
-    # 제일 왼쪽 상단 아래부터, 왼쪽 끝까지의 대각선 탐색, 마찮가지로 기댓값과 다르면 dict에 해당 위치를 키값으로 저장
+    # 제일 왼쪽 상단부터, 왼쪽 끝까지의 대각선 탐색, 마찮가지로 기댓값과 다르면 dict에 해당 위치를 키값으로 저장
     for i in range(1, n):
         if i % 2 == 0:
             if color == "W":

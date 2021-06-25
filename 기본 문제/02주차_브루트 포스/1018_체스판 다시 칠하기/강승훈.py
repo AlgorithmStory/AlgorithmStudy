@@ -1,4 +1,4 @@
-# @@ 체스판이 대각선으로 전부 W이거나 B라는 패턴을 이용
+# @@ 체스판이 대각선끼리는 색이 같다는 패턴을 이용.
 
 n,m = map(int, input().split())
 place = [input() for _ in range(n)]

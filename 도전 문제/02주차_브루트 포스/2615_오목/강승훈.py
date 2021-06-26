@@ -12,8 +12,8 @@ def checker(ball_color, index_1, index_2): # 매개변수로는, 바둑 색, 위
     sequen_check = 1 # 연속된 같은 색의 돌맹이 횟수 세는 변수.
 
     # 1.5시 방향 탐색 (우 상향 대각선)
-    if index_1 > 3 and index_2 < hori_len-7: # index_1은 y 축인데, 3보다 작으면, 인덱스 0보다 작아져서, 인덱스 에러 떠서 조건 준거임. index_2도 마찮가지.
-        for i in range(1,6): # 바둑돌이 같은걸로 5개 연속되면 바로 나가면되지만, 6개 일수도 있는데, 6개면 오목 성립이 안됨. 그래서 1칸 더 탐색하는거.
+    if index_1 > 3 and index_2 < hori_len-7: # index_1은 y 축인데, 시작 위치가 인덱스3보다 작으면, 인덱스 0보다 작아질 수가 있어서 조건 미리 준거임. index_2도 마찮가지.
+        for i in range(1,6): # 바둑돌이 같은 색으로 5개 연속되면 바로 나가면되지만, 6개 일수도 있는데, 6개면 오목이 성립이 안됨. 그래서 1칸 더 탐색하는거.
             if index_1-i < 0 or index_2+i+i >= hori_len: # 마찮가지로 인덱스에러 방지용 구문.
                 break
             if space[index_1-i][index_2+i+i] == ball_color: # 같은 색이면 check 증가.
@@ -22,7 +22,7 @@ def checker(ball_color, index_1, index_2): # 매개변수로는, 바둑 색, 위
                 break
         if sequen_check > 5: # 연속된 돌맹이가 6개면, check변수 1로 바꿔줌. 이건 오목이 아니니까.
             sequen_check = 1
-    if sequen_check == 5 and space[index_1+1][index_2-2] != ball_color: # 연속된 돌맹이가 딱 5개 잘 나왔는데, 탐색을 시작하려는 방향의 반대 돌맹이가 같은 색일 수도 있음.
+    if sequen_check == 5 and space[index_1+1][index_2-2] != ball_color: # 만약 연속된 돌맹이가 딱 5개 잘 나왔는데, 탐색을 시작하려는 방향의 한칸 반대 돌맹이가 같은 색일 수도 있음.
         # 그래서 다른 색일 경우에만 오목이 성립되기 때문에, 바로 return 해주고 함수 종료됨.
         return sequen_check
     else: # 만약 같은 색이라면 오목이 아니라 육목이 되기때문에, 다시 check 변수 1로 바꿔주고 밑에 구문 똑같이 실행됨.

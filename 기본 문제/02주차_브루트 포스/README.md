@@ -1,5 +1,5 @@
-### 월 : [2798_블랙잭](https://www.acmicpc.net/problem/2798)
-### 화 : [2231_분해합](https://www.acmicpc.net/problem/2231)
-### 수 : X
-### 목 : [7568_덩치](https://www.acmicpc.net/problem/7568)
-### 금 : [1018_체스판 다시 칠하기](https://www.acmicpc.net/problem/1018)
+- 월 : [2798_블랙잭](https://www.acmicpc.net/problem/2798)
+- 화 : [2231_분해합](https://www.acmicpc.net/problem/2231)
+- 수 : X
+- 목 : [7568_덩치](https://www.acmicpc.net/problem/7568)
+- 금 : [1018_체스판 다시 칠하기](https://www.acmicpc.net/problem/1018)

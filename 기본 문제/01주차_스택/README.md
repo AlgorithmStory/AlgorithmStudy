@@ -1,0 +1,5 @@
+- 월 : [10828_스택](https://www.acmicpc.net/problem/10828)
+- 화 : [1874_스택 수열](https://www.acmicpc.net/problem/1874)
+- 수 : [9093_단어 뒤집기](https://www.acmicpc.net/problem/9093)
+- 목 : [9012_괄호](https://www.acmicpc.net/problem/9012)
+- 금 : [17608_막대기](https://www.acmicpc.net/problem/17608)

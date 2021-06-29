@@ -1,2 +1,2 @@
-- 토 : [17298_오큰수](https://www.acmicpc.net/problem/17298) -> 버블 or 삽입 알고리즘을 직접 구현해서 풀기
-- 일 : [3015_오아시스 재결합](https://www.acmicpc.net/problem/3015) -> 병합 or 힙 알고리즘을 직접 구현해서 풀기
+- 토 : [17298_오큰수](https://www.acmicpc.net/problem/17298)
+- 일 : [3015_오아시스 재결합](https://www.acmicpc.net/problem/3015)

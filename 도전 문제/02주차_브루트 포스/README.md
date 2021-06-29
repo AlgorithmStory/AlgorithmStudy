@@ -1,1 +1,2 @@
-
+- 토 : [14500_테크로미노](https://www.acmicpc.net/problem/14500)
+- 일 : [2615_오목](https://www.acmicpc.net/problem/2615)

@@ -1,2 +1,2 @@
-- 토 : [14500_테크로미노](https://www.acmicpc.net/problem/14500)
-- 일 : [2615_오목](https://www.acmicpc.net/problem/2615)
+- 토 : [14500_테크로미노](https://www.acmicpc.net/problem/14500) -> 첫째 줄에 테트로미노가 놓인 칸에 쓰인 수들의 합의 최댓값을 출력한다.
+- 일 : [2615_오목](https://www.acmicpc.net/problem/2615) -> 검은색이 이겼는지, 흰색이 이겼는지 또는 아직 승부가 결정되지 않았는지를 판단하는 프로그램을 작성하시오.

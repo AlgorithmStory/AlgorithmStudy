@@ -1,5 +1,5 @@
-- 월 : [2798_블랙잭](https://www.acmicpc.net/problem/2798)
-- 화 : [2231_분해합](https://www.acmicpc.net/problem/2231)
+- 월 : [2798_블랙잭](https://www.acmicpc.net/problem/2798) -> 첫째 줄에 M을 넘지 않으면서 M에 최대한 가까운 카드 3장의 합을 출력한다.
+- 화 : [2231_분해합](https://www.acmicpc.net/problem/2231) -> 자연수 N이 주어졌을 때, N의 가장 작은 생성자를 구해내는 프로그램을 작성하시오.
 - 수 : X
-- 목 : [7568_덩치](https://www.acmicpc.net/problem/7568)
-- 금 : [1018_체스판 다시 칠하기](https://www.acmicpc.net/problem/1018)
+- 목 : [7568_덩치](https://www.acmicpc.net/problem/7568) -> 입력에 나열된 사람의 덩치 등수를 구해서 그 순서대로 첫 줄에 출력해야 한다.
+- 금 : [1018_체스판 다시 칠하기](https://www.acmicpc.net/problem/1018) -> 첫째 줄에 지민이가 다시 칠해야 하는 정사각형 개수의 최솟값을 출력한다.

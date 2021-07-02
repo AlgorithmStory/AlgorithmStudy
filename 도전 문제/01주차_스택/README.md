@@ -1,2 +1,2 @@
-- 토 : [17298_오큰수](https://www.acmicpc.net/problem/17298)
-- 일 : [3015_오아시스 재결합](https://www.acmicpc.net/problem/3015)
+- 토 : [17298_오큰수](https://www.acmicpc.net/problem/17298) -> 총 N개의 수 NGE(1), NGE(2), ..., NGE(N)을 공백으로 구분해 출력한다.
+- 일 : [3015_오아시스 재결합](https://www.acmicpc.net/problem/3015) -> 서로 볼 수 있는 쌍의 수를 출력한다.

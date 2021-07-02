@@ -1,5 +1,5 @@
-- 월 : [10828_스택](https://www.acmicpc.net/problem/10828)
-- 화 : [1874_스택 수열](https://www.acmicpc.net/problem/1874)
-- 수 : [9093_단어 뒤집기](https://www.acmicpc.net/problem/9093)
-- 목 : [9012_괄호](https://www.acmicpc.net/problem/9012)
-- 금 : [17608_막대기](https://www.acmicpc.net/problem/17608)
+- 월 : [10828_스택](https://www.acmicpc.net/problem/10828) -> 출력해야하는 명령이 주어질 때마다, 한 줄에 하나씩 출력한다.
+- 화 : [1874_스택 수열](https://www.acmicpc.net/problem/1874) -> 입력된 수열을 만들기 위해 필요한 연산을 한 줄에 한 개씩 출력한다.
+- 수 : [9093_단어 뒤집기](https://www.acmicpc.net/problem/9093) -> 각 테스트 케이스에 대해서, 입력으로 주어진 문장의 단어를 모두 뒤집어 출력한다.
+- 목 : [9012_괄호](https://www.acmicpc.net/problem/9012) -> 올바른 괄호 문자열(VPS)이면 “YES”, 아니면 “NO”를 한 줄에 하나씩 차례대로 출력
+- 금 : [17608_막대기](https://www.acmicpc.net/problem/17608) -> 오른쪽에서 N개의 막대기를 보았을 때, 보이는 막대기의 개수를 출력한다.

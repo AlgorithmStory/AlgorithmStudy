@@ -1,3 +1,5 @@
+# 아이디어 -> 한번이라도 "-" 부호가 나오면, 그 뒤에 나오는 수는 전부다 마이너스 처리.
+
 # 입력.
 math_ex = input()
 
@@ -13,14 +15,12 @@ for i in range(ex_len):
     # 숫자면 일단 sub_number에 문자열로 담아둠.
     if math_ex[i] != "-" and math_ex[i] != "+":
         sub_number += math_ex[i]
-        # 숫자가 담겼을때, 인덱스의 마지막이면 밑에 조건문 마저 실행됨. (그게 아니면 밑에 무시.)
-        if i != ex_len-1:
+        if i != ex_len-1: # 숫자가 담겼을때, 인덱스의 마지막이면 밑에 조건문 마저 실행됨. (그게 아니면 밑에 무시.)
             continue
 
     # 처음 숫자가 아닌게 감지가 되면, turn에 의해서 이게 실행됨.
     if turn == 1 or (math_ex[i] == "+" and turn != 0):
-        # 만약 감지 된게 "-"라면 turn을 0으로 바꿔주고 영원히 23~28줄 조건문을 실행시키지 않음.
-        if math_ex[i] == "-":
+        if math_ex[i] == "-": # 만약 감지 된게 "-"라면 turn을 0으로 바꿔주고 영원히 20번 줄 조건문을 영원히 실행시키지 않음.
             turn = 0
         plus_sum += int(sub_number) # 양의 변수에 담고,
         sub_number = "" # 잠시 저장하는 변수는 초기화.

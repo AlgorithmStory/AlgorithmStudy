@@ -41,7 +41,7 @@ for i in range(len(table_arr)):
             table_arr[i][-(k+1)] = table_arr[i][sub_len-(k+2)]
         table_arr[i][0] = tmp
 
-# 출력 하기 위해서 1차원 배열을 다시 형식에 맞게 집어넣어줌.
+# 출력 하기 위해서 1차원 배열을 다시 형식에 맞게 집어넣어주는 함수.
 # 위에서 만든 get 함수를 조금 변형해서, 만든거라 따로 설명은 안하겠습니다.
 def arr_push(n,m,bias):
     index_2 = 0

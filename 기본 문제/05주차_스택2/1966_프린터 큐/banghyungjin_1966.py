@@ -18,5 +18,6 @@ for i in range(numbers_of_tests):                                       # 테스
         else:                                                           # 만약 리스트의 첫 프린트를 인쇄하는게 아니면
             test_cases.append(test_cases[0])                            # 첫 프린트를 마지막으로 이동
             test_cases.pop(0)                                           # -
+    
     # while 문을 빠져나오면 원하는 문서가 출력된다는 의미 
     print(test[0] - len(test_cases) + 1)                                # N - 현재 남은 프린트 개수 + 1 출력                     

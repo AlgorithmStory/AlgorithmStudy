@@ -6,7 +6,7 @@ def main():
     c_d = {}                                    # 문서들의 중요도값과 해당 중요도값의 갯수를 저장하기 위한 딕셔너리 선언 
 
                                                 # 딕셔너리 값 넣기
-    for i in range(1,9+1):
+    for i in set(li):
         if li.count(i) == 0:
             continue
         c_d[i] = li.count(i)                    # (키 : 중요도, value : 중요도가 같은 문서들의 갯수) 로 딕셔너리 item 추가

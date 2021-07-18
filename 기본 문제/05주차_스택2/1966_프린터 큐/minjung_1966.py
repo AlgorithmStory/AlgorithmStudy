@@ -1,7 +1,7 @@
 from sys import stdin
 def main():
-    co, lo  = map(int, stdin.readline().split())# 문서 갯수, 위치 입력
-    li = list(map(int,stdin.readline().split()))# 문서들의 중요도값 입력
+    co, lo  = map(int, stdin.readline().split(' '))# 문서 갯수, 위치 입력
+    li = list(map(int,stdin.readline().split(' ')))# 문서들의 중요도값 입력
 
     c_d = {}                                    # 문서들의 중요도값과 해당 중요도값의 갯수를 저장하기 위한 딕셔너리 선언 
 

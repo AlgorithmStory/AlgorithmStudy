@@ -21,7 +21,7 @@ for _ in range(test_case):
         # dp배열의 마지막부터 계산을 재개.
         for i in range(dp_arr_len, n):
 
-            # coin[j]원으로 n원을 만들기 위한 횟수는 n-coin[j...k]원을 만들기 위한 횟수의 합임.
+            # coin원으로 n원을 만들기 위한 횟수는 n-coin원을 만들기 위한 횟수의 합임.
             dp_arr.append([sum(dp_arr[i-1]), sum(dp_arr[i-2]), sum(dp_arr[i-3])])
 
         # 출력.

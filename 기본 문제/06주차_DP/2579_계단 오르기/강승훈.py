@@ -13,10 +13,6 @@ def recursion(index):
     if index == 0:
         return stairs[0]
 
-    # 두번째 경우에선, 첫번쨰와 두번째 값을 합한 값이 가장 큰 경우이므로 두개를 더해서 리턴.
-    if index == 1:
-        return stairs[0] + stairs[1]
-
     # 인덱스가 위치를 벗어나면 걍 리턴.
     if index < 0:
         return 0

@@ -1,6 +1,6 @@
 import sys
 from collections import deque
-
+# 클래스 만든거 계속 쓸려다 코드가 쓸데없이 길어졌습니다. ㅠㅠ
 
 class Node:                                                     # 각 노드를 나타내는 클래스
     name: int                                                   # 노드의 이름

@@ -1,5 +1,6 @@
 import sys
 from collections import deque
+# 클래스를 계속 사용했더니 시간이 많이 느려져서 pypy3로 제출했어요 
 
 
 class Node:                                                                         # 각 노드를 나타내는 클래스

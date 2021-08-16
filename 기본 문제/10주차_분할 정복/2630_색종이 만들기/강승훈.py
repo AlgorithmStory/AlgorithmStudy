@@ -15,6 +15,8 @@ def recursion(arr):
             if arr[i][j] != init_value:
                 break_check = 1
                 break
+        if break_check == 1:
+            break
 
     # 모든 값이 같으면, 분기해서 카운트 해줌.
     if break_check == 0:

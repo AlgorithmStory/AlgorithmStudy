@@ -15,9 +15,9 @@ bool cmp(inf a, inf b){
 }
 
 int main(){
-    int t;
-    scanf("%d", &t);
-    while(t--){
+    int T;
+    scanf("%d", &T);
+    while(T--){
         int dp[10005]={};
         inf p[105];
 

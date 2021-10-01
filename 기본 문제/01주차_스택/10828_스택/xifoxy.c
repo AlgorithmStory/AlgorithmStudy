@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+// 스택을 직접 구현하고,
+// 요구사항에 맞게 command가 들어오면
+// 명령어를 비교 후 실행한다.
+
 #define PUSH	"push"
 #define POP		"pop"
 #define SIZE	"size"
@@ -52,7 +56,7 @@ int		pop(t_stack *stack)
 	}
 	else
 		ret = -1;
-	return ret;
+	return (ret);
 }
 
 void	push(t_stack *stack)
@@ -66,6 +70,7 @@ void	push(t_stack *stack)
 	node->next = stack->iter;
 	stack->iter = node;
 	stack->size++;
+	return ;
 }
 
 void	st(char *cmd, t_stack *stack)
@@ -80,6 +85,7 @@ void	st(char *cmd, t_stack *stack)
 		printf("%d\n", empty(stack));
 	else if(!strcmp(TOP, cmd))
 		printf("%d\n", top(stack));
+	return ;
 }
 
 int		main(void)
@@ -95,4 +101,5 @@ int		main(void)
 		scanf("%s", cmd);
 		st(cmd, &stack);
 	}
+	return (0);
 }

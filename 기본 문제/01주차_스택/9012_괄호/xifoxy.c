@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
+// 괄호 문제의 핵심은, 괄호의 페어가 맞아야 한다는것이다.
+// 열리는 괄호는 스택에 담고, 닫히는 괄호가 들어올땐
+// 스택에서 열린괄호를 빼준다.
+// 스택에 괄호가 없는 상태에서 닫히는 괄호가 들어오거나,
+// 솔루션이 끝난 후 괄호가 스택에 남아 있다면 fail이다.
+
 typedef struct		s_node
 {
 	int				num;
@@ -46,7 +52,7 @@ int		pop(t_stack *stack)
 	}
 	else
 		ret = -1;
-	return ret;
+	return (ret);
 }
 
 void	push(t_stack *stack, int num)
@@ -58,6 +64,7 @@ void	push(t_stack *stack, int num)
 	node->next = stack->iter;
 	stack->iter = node;
 	stack->size++;
+	return ;
 }
 
 int		sol(char *str)
@@ -90,4 +97,5 @@ int		main(void)
 		else
 			puts("YES");
 	}
+	return (0);
 }

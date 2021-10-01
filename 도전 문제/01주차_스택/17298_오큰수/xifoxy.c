@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+// 큰녀석이 나오면 갱신해주면 된다.
+// 그리고 다시 큐에 집어넣으면 된다 끝.
+
 typedef struct		s_node
 {
 	int				num;
@@ -46,7 +49,7 @@ int		pop(t_stack *stack)
 	}
 	else
 		ret = -1;
-	return ret;
+	return (ret);
 }
 
 void	push(t_stack *stack, int num)
@@ -58,6 +61,7 @@ void	push(t_stack *stack, int num)
 	node->next = stack->iter;
 	stack->iter = node;
 	stack->size++;
+	return ;
 }
 
 #define MAX 1000002
@@ -86,4 +90,5 @@ int		main(void)
 	}
 	for(int i = 1; i <= n; ++i)
 		printf("%d ", ans[i]);
+	return (0);
 }

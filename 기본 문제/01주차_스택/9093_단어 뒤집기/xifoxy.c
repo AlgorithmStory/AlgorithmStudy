@@ -3,6 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 
+// 예쁘게 잘 뒤집으면 된다.
+
 typedef struct		s_node
 {
 	int				num;
@@ -47,7 +49,7 @@ int		pop(t_stack *stack)
 	}
 	else
 		ret = -1;
-	return ret;
+	return (ret);
 }
 
 void	push(t_stack *stack, int num)
@@ -59,6 +61,7 @@ void	push(t_stack *stack, int num)
 	node->next = stack->iter;
 	stack->iter = node;
 	stack->size++;
+	return ;
 }
 
 void	reverse(char *msg, char *iter)
@@ -83,6 +86,7 @@ void	reverse(char *msg, char *iter)
 	}
 	while (size(&stack))
 		*(iter++) = pop(&stack);
+	return ;
 }
 
 int		main(void)
@@ -103,4 +107,5 @@ int		main(void)
 		puts(ans);
 		free(ans);
 	}
+	return (0);
 }

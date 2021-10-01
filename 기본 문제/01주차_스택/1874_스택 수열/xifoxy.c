@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+// 생각외로 간단하다.
+// 주어진 수열을 스택에 넣었다 뺴면서 만들 수 있는 수열이면 만들면 된다.
+
 typedef struct		s_node
 {
 	int				num;
@@ -46,7 +49,7 @@ int		pop(t_stack *stack)
 	}
 	else
 		ret = -1;
-	return ret;
+	return (ret);
 }
 
 void	push(t_stack *stack, int num)
@@ -58,6 +61,7 @@ void	push(t_stack *stack, int num)
 	node->next = stack->iter;
 	stack->iter = node;
 	stack->size++;
+	return ;
 }
 
 int		main(void)
@@ -112,4 +116,5 @@ int		main(void)
 			puts("");
 		}
 	}
+	return (0);
 }

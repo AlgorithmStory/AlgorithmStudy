@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+// 문제에서 설명하는대로,
+// 오른쪽에서 봤을때 보이는 오름차순의 개수를 구하면 된다.
+
 typedef struct		s_node
 {
 	int				num;
@@ -46,7 +49,7 @@ int		pop(t_stack *stack)
 	}
 	else
 		ret = -1;
-	return ret;
+	return (ret);
 }
 
 void	push(t_stack *stack, int num)
@@ -58,6 +61,7 @@ void	push(t_stack *stack, int num)
 	node->next = stack->iter;
 	stack->iter = node;
 	stack->size++;
+	return ;
 }
 
 int		main(void)
@@ -84,4 +88,5 @@ int		main(void)
 		pop(&stack);
 	}
 	printf("%d", ans);
+	return (0);
 }

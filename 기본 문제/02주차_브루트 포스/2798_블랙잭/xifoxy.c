@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// 카드 3개의 합이 m에 가까운것을 찾아서 출력하면 된다.
+// depth가 정해져 있는 문제는 재귀가 편하다.
+
 const int	M = -1e9;
 int			*arr;
 int			n;

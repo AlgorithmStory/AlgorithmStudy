@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+// 조건에 맞게 잘 비교해주면 끝난다.
+
 typedef struct	s_info
 {
 	int	height;

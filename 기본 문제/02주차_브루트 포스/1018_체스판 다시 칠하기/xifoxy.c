@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// 그냥 판때기 크기만큼 검사해보면 끝난다.
+
 int	solution(int x, int y, char **map)
 {
 	int		ret;
@@ -47,4 +49,5 @@ int	main(void)
 	}
 	free(map);
 	printf("%d\n", ans);
+	return (0);
 }

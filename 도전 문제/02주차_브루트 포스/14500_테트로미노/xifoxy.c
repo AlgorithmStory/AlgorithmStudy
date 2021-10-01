@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// 배열을 순회하면서 만들어질 수 있는 모든 모형을 검사해보면 된다.
+
 const int	INF = -1e9;
 int			board[505][505];
 int			n, m;

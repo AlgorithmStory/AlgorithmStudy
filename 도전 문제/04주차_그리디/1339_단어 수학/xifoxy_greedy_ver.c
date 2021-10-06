@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+// 각 자릿수의 값들을 치환해서 메모 해준다.
+// 그런 다음 내림차순으로 정렬하여,
+// digit을 추가해주면 된다.
+// ex) ABC BBB BB BB BB
+// A = 100, B = 154, C = 1
+
 typedef struct	s_info
 {
 	char		ch;
